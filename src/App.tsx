@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import { Rxjs4 } from "./components/Rxjs/Rxjs4";
+import { Observable1 } from "./components/Observable/Observable1";
+import { Observable2 } from "./components/Observable/Observable2";
+import {CuseLayout} from './components/Hooks/CuseLayout'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CuseLayout />
+      {/* <Observable1 /> */}
     </div>
   );
 }
