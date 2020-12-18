@@ -19,7 +19,7 @@ export const CuseRef: FC = () => {
     setColor("blue");
     console.log("事件内部", cRef.current, count);
   };
-//   cRef.current = count;
+  //   cRef.current = count;
   console.log("外面结尾", cRef.current, count);
 
   return (
