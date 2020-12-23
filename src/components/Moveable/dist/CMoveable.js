@@ -3,6 +3,10 @@ exports.__esModule = true;
 exports.CMoveable = void 0;
 var moveable_1 = require("moveable");
 exports.CMoveable = function () {
+    var getDate = function () {
+        return new Date();
+    };
+    console.log("jisuan", getDate());
     var moveable = new moveable_1["default"](document.body, {
         target: document.querySelector(".target"),
         // If the container is null, the position is fixed. (default: parentElement(document.body))
