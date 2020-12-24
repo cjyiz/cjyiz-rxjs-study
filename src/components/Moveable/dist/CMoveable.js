@@ -3,10 +3,11 @@ exports.__esModule = true;
 exports.CMoveable = void 0;
 var moveable_1 = require("moveable");
 exports.CMoveable = function () {
-    var getDate = function () {
-        return new Date();
-    };
-    console.log("jisuan", getDate());
+    // const getDate = () => {
+    //   return new Date();
+    // };
+    var cc = new Date();
+    console.log("jisuan", cc);
     var moveable = new moveable_1["default"](document.body, {
         target: document.querySelector(".target"),
         // If the container is null, the position is fixed. (default: parentElement(document.body))

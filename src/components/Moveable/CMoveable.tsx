@@ -1,10 +1,12 @@
 import Moveable from "moveable";
 
 export const CMoveable = () => {
-  const getDate = () => {
-    return new Date();
-  };
-  console.log("jisuan", getDate());
+  // const getDate = () => {
+  //   return new Date();
+  // };
+
+  const cc=new Date()
+  console.log("jisuan", cc);
   const moveable = new Moveable(document.body, {
     target: document.querySelector(".target") as any,
     // If the container is null, the position is fixed. (default: parentElement(document.body))

@@ -6,12 +6,13 @@ import { Observable2 } from "./components/Observable/Observable2";
 import {CuseRef} from './components/Hooks/CuseRef'
 // import {Cimmer} from './components/Immer/Cimmer'
 import {CMoveable} from './components/Moveable/CMoveable'
+import {CDate} from './components/JavascriptOperate/CDate'
 function App() {
   
   return (
     <div className="App">
       {/* <CuseRef /> */}
-      <CMoveable />
+     <CDate />
       {/* <Observable1 /> */}
     </div>
   );
