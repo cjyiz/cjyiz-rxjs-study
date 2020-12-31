@@ -14,7 +14,7 @@ export const CuseMemo: FC = () => {
   console.log("useMemo执行外面");
   const memoizedValue = useMemo(() => {
     console.log("useMemo执行");
-    return countMemoValue(name, age);
+    return countMemoValue(name, age); 
   }, [name, age]);
   const countClick = () => {
     setCount((count) => count + 1);

@@ -1,0 +1,134 @@
+## analyzing
+
+- **src/index.tsx** - DvisionEditor
+  - 数据准备（promise 解析）
+    - getFullPageData
+  - 加载功能
+    - **hotkey**
+    - zoomLocator（layout initial render）
+    - **PCLayout**
+      - top
+        - HeaderBarSection
+          - 返回
+            - callProps
+          - 标题
+            - updateAssetTitle
+          - 撤销 重做
+            - snapshot
+          - 下载 保存
+            - getCleanPageDataForSave
+            - callProps
+      - left
+        - NavSideBar
+          - switchNavBar （含收起）
+        - NavAreaPanel
+          - 切换模板
+            - fetchTemplate
+            - searchTemplate
+            - switchTemplate
+          - 新建文字面板 新建文字
+            - fetchBrandPanel
+            - createTextItem
+          - 新建元素面板 新建元素
+            - createSvgItem
+            - createImageBoxItem
+          - 新建图片面板 新建图片
+            - fetchBrandPanel
+            - createImageItem
+          - 背景设置
+            - updateBg
+            - colorPanel
+      - center
+        - TopBarContainer
+          - logic
+            - 不同情况时加载功能
+            - （fontSize 固定宽度）
+            - shrink（zoomLocator）
+          - text
+            - 略
+          - image/box
+            - crop
+            - simpleButton
+            - asyncButton
+            - openPanel
+          - svg
+            - change color
+          - common
+            - 成组 拆组
+            - 对齐
+            - 定位
+            - 阴影
+            - 复制
+            - 锁定
+            - 删除
+        - CenterPageContainer
+          - 渲染页面和组件
+          - moveableLayer
+          - AdvLayer
+        - Zoom
+          - canvasLocator
+      - right
+        - ItemListPanel
+          - 图层列表
+          - 图层打标列表 + 面板
+            - calcAndUpdatePageData
+          - 图层管理列表 + 面板（TODO）
+  - 卸载功能
+
+
+- data
+  - unity
+    - title 等（修改标题）
+    - pageData
+    - sketch（当前编辑之类的）
+      - currentNavbar
+      - currentSubPanel
+  - comp
+    - useState
+
+- comp
+  - popup
+  - moveable
+  - material selector
+- common comp
+  - util
+    - dropdownNeo（topbar）
+    - slider
+    - sliderInput
+    - switcher
+  - render
+    - nav
+      - navButton + indicator
+      - listPanel（for panel）
+        - listImage（water fall）
+        - listItem（svg imageBox）
+        - listBlock（color picker）
+        - Title
+      - searchInput
+    - topbar
+      - IconButton
+      - TextButton
+      - svg color item
+
+- utils
+  - create
+    - createByClick
+    - createByDrag
+    - canvasLocator / calculater
+  - updateSelection
+    - by Click
+    - with shift/ctrl
+    - 
+  - moveable
+  - hotkey
+    - copy paste
+    - delete
+    - move
+  - 成组
+  - snapshot
+  - page scale 计算
+  - 埋点
+
+- stack
+  - sass
+  - png
